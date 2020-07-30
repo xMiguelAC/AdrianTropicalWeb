@@ -1,0 +1,49 @@
+<!-- RESERVACION DE ADRIAN TROPICAL // HOME -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>[Cliente] Adrian Tropical</title>
+	<!--VINCULACION -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="ClienteStyle.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+		<!-- LOGO IMAGEN DE INICIO -->
+	<header>
+		<a href="Responsive.html" class="logo"><img src="Logo.png" width="150px" height="57px">.</a>
+		<!-- MENU DE NAVEGACION -->
+		<div class="menu-toggle"></div>
+		<nav>
+			<ul>
+				<li><a href="ClienteTropical.html" class="active">Inicio</a></li>
+				<li><a href="LoginTropical.html">Log-out</a></li>
+				<li><a href="ReservacionTropical.html">Mesas</a></li>
+				<li><a href="Menu2Tropical.php">Menu</a></li> 
+			</ul>
+		</nav>
+		<div class="clearfix"></div>
+	</header>
+	<!-- SCRIPT DEL RESPONSIVE DESIGN -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	  <script type="text/javascript">
+	  	$(document).ready(function(){
+	  		$('.menu-toggle').click(function(){
+	  			$('.menu-toggle').toggleClass('active')
+	  			$('nav').toggleClass('active')
+	  		})
+	  	})
+	  </script>
+	  <h1>Clientes</h1>
+	  <div class="Blanco">
+	  	<ul><b>
+		  	<li>Telefonos: (809) 565-9236</li>
+		  	<li>Correo: AdrianTropical@cilm.net</li>
+		  	<li>Pagina Web: <a href="Responsive.html">AdrianTropical.com</a></li></b>
+	  	</ul>
+	  </div>
+</body>
+</html>

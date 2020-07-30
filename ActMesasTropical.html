@@ -1,0 +1,72 @@
+<!-- RESERVACION DE ADRIAN TROPICAL // HOME -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>[Empleado] Adrian Tropical</title>
+	<!--VINCULACION -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="ActMesasStyle.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+		<!-- LOGO IMAGEN DE INICIO -->
+	<header>
+		<a href="Responsive.html" class="logo"><img src="Logo.png" width="150px" height="57px">.</a>
+		<!-- MENU DE NAVEGACION -->
+		<div class="menu-toggle"></div>
+		<nav>
+			<ul>
+				<li><a href="EmpleadoTropical.html">Inicio</a></li>
+				<li><a href="LoginTropical.html">Log-out</a></li>
+				<li><a href="ActMesasTropical.php" class="active">Actualizar Mesas</a></li>
+				<li><a href="ActMenusTropical2.php">Actualizar Menu</a></li> 
+			</ul>
+		</nav>
+		<div class="clearfix"></div>
+	</header>
+	<!-- SCRIPT DEL RESPONSIVE DESIGN -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	  <script type="text/javascript">
+	  	$(document).ready(function(){
+	  		$('.menu-toggle').click(function(){
+	  			$('.menu-toggle').toggleClass('active')
+	  			$('nav').toggleClass('active')
+	  		})
+	  	})
+	  </script>
+	  <h1>Actualizar Mesas</h1>
+
+<table id="t01">
+  <tr>
+    <th>Nombre</th>
+    <th>Dia de la Cena</th> 
+    <th>Hora de Entrada</th>
+    <th>Hora de Salida</th>
+  </tr>
+  <tr>
+    <td>Miguel</td>
+    <td>12 de Abril</td>
+    <td>8am</td>
+    <td>8pm</td>
+  </tr>
+  <tr>
+    <td>Angel</td>
+    <td>02 de Abril</td>
+    <td>10am</td>
+    <td>1pm</td>
+  </tr>
+  <tr>
+    <td>Colon</td>
+    <td>22 de Agosto</td>
+    <td>9pm</td>
+    <td>10pm</td>
+  </tr>
+</table>
+
+<div class="margen"></div>
+	  
+</body>
+</html>

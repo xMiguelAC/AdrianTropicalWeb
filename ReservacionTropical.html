@@ -1,0 +1,119 @@
+<!-- RESERVACION DE ADRIAN TROPICAL // HOME -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>[Mesas] Adrian Tropical</title>
+	<!--VINCULACION -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="ReservacionStyle.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+		<!-- LOGO IMAGEN DE INICIO -->
+	<header>
+		<a href="Responsive.html" class="logo"><img src="Logo.png" width="150px" height="57px">.</a>
+		<!-- MENU DE NAVEGACION -->
+		<div class="menu-toggle"></div>
+		<nav>
+			<ul>
+				<li><a href="ClienteTropical.html">Inicio</a></li>
+				<li><a href="LoginTropical.html">Log-out</a></li>
+				<li><a href="ReservacionTropical.html" class="active">Mesas</a></li>
+				<li><a href="Menu2Tropical.php">Menu</a></li> 
+			</ul>
+		</nav>
+		<div class="clearfix"></div>
+	</header>
+	<!-- SCRIPT DEL RESPONSIVE DESIGN -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	  <script type="text/javascript">
+	  	$(document).ready(function(){
+	  		$('.menu-toggle').click(function(){
+	  			$('.menu-toggle').toggleClass('active')
+	  			$('nav').toggleClass('active')
+	  		})
+	  	})
+	  </script>
+
+	 <h1>Eliga la Mesa:</h1>
+<!--
+<form action="Example.html">
+  <select name="Day">
+    <option value="Dia">Dia de la Cena</option>
+    <option value="Mon">Lunes</option>
+    <option value="Tue">Martes</option>
+    <option value="Wed">Miercoles</option>
+    <option value="Thu">Jueves</option>
+    <option value="Fri">Viernes</option>
+    <option value="Sat">Sabado</option>
+    <option value="Sun">Domingo</option>
+  </select>
+  <br><br>
+
+<form action="Example.html">
+  <select name="Entrada">
+    <option value="Entradas">Hora de Entrada</option>
+    <option value="ocho">8pm</option>
+    <option value="nueve">9pm</option>
+    <option value="diez">10pm</option>
+    <option value="once">11pm</option>
+    <option value="doce">12am</option>
+    <option value="una">1am</option>
+    <option value="dos">2am</option>
+  </select>
+  <br><br>
+
+<form action="Example.html">
+  <select name="Salida">
+    <option value="Salidas">Hora de Salida</option>
+    <option value="nueve.s">9pm</option>
+    <option value="diez.s">10pm</option>
+    <option value="once.s">11pm</option>
+    <option value="doce.s">12am</option>
+    <option value="una.s">1am</option>
+    <option value="dos.s">2am</option>
+    <option value="tres.s">3am</option>
+  </select>
+  <br><br>
+
+-->
+
+<section>
+<form action="InsertadoTropical.php" method="post">
+<!-- <form action="LoadingTropical.html" method="post"> -->
+	<br>
+	Nombre:
+	<br>
+	<input type="text" name="NOMBRE">
+	<br><br>
+  Dia de la Cena:
+  <br>
+  <input type="date" name="DIA">
+<br><br>
+Entrada:<br>
+  <input type="time" name="ENTRADA">
+<br><br>
+  Salida:<br>
+  <input type="time" name="SALIDA">
+<br><br>
+	Personas:<br>
+  <select name="CANTIDAD">
+    <option value="Canti">Cantidad de Personas</option>
+    <option value="UnaPersona">1 - Persona</option>
+    <option value="DosPersonas">2 - Persona</option>
+   <!-- <option value="tresP">3 - Persona</option>  -->
+    <option value="CuatroPersonas">4 - Persona</option>
+   <!-- <option value="seisP">6 - Persona</option> -->
+    <option value="DiezPersonas">10 - Persona</option>
+  </select>
+  <br><br>
+
+  <input type="submit" onclick="alert('Una vez enviado, no hay vuelta atras...')">
+</form>
+</section>
+
+</body>
+</html>

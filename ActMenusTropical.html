@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>[Empleado] Adrian Tropical</title>
+	<!--VINCULACION -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="ActMenusTropical.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+		<!-- LOGO IMAGEN DE INICIO -->
+	<header>
+		<a href="Responsive.html" class="logo"><img src="Logo.png" width="150px" height="57px">.</a>
+		<!-- MENU DE NAVEGACION -->
+		<div class="menu-toggle"></div>
+		<nav>
+			<ul>
+				<li><a href="EmpleadoTropical.html">Inicio</a></li>
+				<li><a href="LoginTropical.html">Log-out</a></li>
+				<li><a href="ActMesasTropical.php">Actualizar Mesas</a></li>
+				<li><a href="ActMenusTropical.html" class="active">Actualizar Menu</a></li> 
+			</ul>
+		</nav>
+		<div class="clearfix"></div>
+	</header>
+	<!-- SCRIPT DEL RESPONSIVE DESIGN -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	  <script type="text/javascript">
+	  	$(document).ready(function(){
+	  		$('.menu-toggle').click(function(){
+	  			$('.menu-toggle').toggleClass('active')
+	  			$('nav').toggleClass('active')
+	  		})
+	  	})
+	  </script>
+	  <h1>Actualizar Menus</h1>
+
+	  <div class="conte">
+	  	 <form action="Loading2Tropical.html">
+	  	Nombre del Plato:
+	  	<select name="NameProduct">
+		  <option value="1">Albondigas</option>
+		  <option value="2">Ensalada de Pasta</option>
+		  <option value="3">Pizza de Pasa</option>
+		  <option value="4">Burritos</option>
+		  <option value="5">Pizza de Queso</option>
+		  <option value="6">Aros de Cebolla</option>
+		  <option value="7">Quipes</option>
+		  <option value="8">Sopa</option>
+		  <option value="9">Camarones</option>
+		  <option value="10">Arroz con Leche</option>
+		  <option value="11">Asopao</option>
+		  <option value="12">Sushi</option>
+		</select>
+	  	<br>
+	  	<br>
+	  	Estado del Menu:
+	  	<select name="Disponibilidad">
+		  <option value="Si">Disponible</option>
+		  <option value="No">Agotado</option>
+		  <option value="Mas Tarde">Mas Tarde...</option>
+		</select>
+	  	<input type="submit" name="send">
+	  </form>
+	</div>
+</div> 
+
+<!-- <form method="post" action="ActMesasTropical.php">
+	<input type="text" name="numero">
+	<input type="submit" name="enviar">
+</form> -->
+
+<div class="container">
+	<div class="box">
+		<div class="imgBox">
+			<img src="Albondiga.png">
+		</div>
+		<div class="detalles">
+			<div class="contenido">
+			<h2>Albondigas:</h2>
+			<p>[DISPONIBLE]</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="box"><div class="imgBox">
+			<img src="Ensalada.jpg">
+		</div>
+		<div class="detalles">
+			<div class="contenido">
+			<h2>Ensalada de Pasta:</h2>
+			<p>[DISPONIBLE]</p>
+			</div>
+		</div></div>
+
+
+	<div class="box"><div class="imgBox">
+			<img src="Pizza.jpg">
+		</div>
+		<div class="detalles">
+			<div class="contenido">
+			<h2>Pizza de Pasas:</h2>
+			<p>[NO DISPONIBLE]</p>
+			</div>
+		</div></div>
+
+
+	<div class="box"><div class="imgBox">
+			<img src="burritos.jpg">
+		</div>
+		<div class="detalles">
+			<div class="contenido">
+			<h2>Burritos:</h2>
+			<p>[DISPONIBLE]</p>
+			</div>
+		</div></div>	
+</div>
+
+<div class="container">
+	<div class="box">
+		<div class="imgBox">
+			<img src="pizza2.jpg">
+		</div>
+		<div class="detalles">
+			<div class="contenido">
+			<h2>Pizza de Queso:</h2>
+			<p>[DISPONIBLE]</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="box"><div class="imgBox">
+			<img src="aros.jpg">
+		</div>
+		<div class="detalles">
+			<div class="contenido">
+			<h2>Aros de Cebolla:</h2>
+			<p>[NO DISPONIBLE]</p>
+			</div>
+		</div></div>
+
+
+	<div class="box"><div class="imgBox">
+			<img src="quipes.jpg">
+		</div>
+		<div class="detalles">
+			<div class="contenido">
+			<h2>Quipes:</h2>
+			<p>[NO DISPONIBLE]</p>
+			</div>
+		</div></div>
+
+
+	<div class="box"><div class="imgBox">
+			<img src="sopa.jpg">
+		</div>
+		<div class="detalles">
+			<div class="contenido">
+			<h2>Sopa:</h2>
+			<p>[DISPONIBLE]</p>
+			</div>
+		</div></div>	
+</div>
+
+<div class="container">
+	<div class="box">
+		<div class="imgBox">
+			<img src="camaron.jpg">
+		</div>
+		<div class="detalles">
+			<div class="contenido">
+			<h2>Camarones:</h2>
+			<p>[DISPONIBLE]</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="box"><div class="imgBox">
+			<img src="dulce.jpg">
+		</div>
+		<div class="detalles">
+			<div class="contenido">
+			<h2>Arroz con Leche:</h2>
+			<p>[DISPONIBLE]</p>
+			</div>
+		</div></div>
+
+
+	<div class="box"><div class="imgBox">
+			<img src="guiso.jpeg">
+		</div>
+		<div class="detalles">
+			<div class="contenido">
+			<h2>Asopao' :</h2>
+			<p>[NO DISPONIBLE]</p>
+			</div>
+		</div></div>
+
+		
+	<div class="box"><div class="imgBox">
+			<img src="sushi.jpg">
+		</div>
+		<div class="detalles">
+			<div class="contenido">
+			<h2>Sushi:</h2>
+			<p>[DISPONIBLE]</p>
+			</div>
+		</div>
+	</div>	
+</div>
+
+</body>
+</html>

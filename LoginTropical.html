@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>[Login] Adrian Tropical</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="LoginStyle.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<a href="Responsive.html" class="logo"><img src="Logo.png" width="150px" height="57px">.</a>
+		<div class="menu-toggle"></div>
+		<nav>
+			<ul>
+				<li><a href="Responsive.html" >Inicio</a></li>
+				<li><a href="LoginTropical.html" class="active">Login</a></li>
+				<li><a href="ContactoTropical.html">Contacto</a></li>
+				<li><a href="NosotrosTropical.html">Nosotros</a></li> 
+			</ul>
+		</nav>
+		<div class="clearfix"></div>
+	</header>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	  <script type="text/javascript">
+	  	$(document).ready(function(){
+	  		$('.menu-toggle').click(function(){
+	  			$('.menu-toggle').toggleClass('active')
+	  			$('nav').toggleClass('active')
+	  		})
+	  	})
+	  </script>
+
+	  <section>
+	<div class="container">
+		<div class="login-form">
+			<h1>Sign in</h1>
+			<form method="get">
+				<input type="text" name="" placeholder="Username">
+				<input type="password" name="" placeholder="Password"><br>
+				<input type="radio" name="Client" value="Clientes" onclick="this.form.action = 'ClienteTropical.html'" > Clientes <br> <br>
+				<input type="radio" name="Employee" value="Empleados" onclick="this.form.action = 'EmpleadoTropical.html'"> Empleados <br><br>
+				<input type="submit" name="" value="Login" >
+			</form>
+			<br>
+			<a href="#">Contrasena olvidada?</a>
+		</div>
+	</div>
+</section>
+
+
+
+</body>
+</html>
